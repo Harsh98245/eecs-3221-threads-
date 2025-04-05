@@ -53,7 +53,7 @@ pthread_cond_t alarm_cond = PTHREAD_COND_INITIALIZER;
 alarm_t *alarm_list = NULL;
 display_thread_t *display_threads = NULL;
 
-// Circular buffer
+// Circular buffer sahred by main and consumer thread 
 alarm_t *circular_buffer[CIRCULAR_BUFFER_SIZE];
 int buffer_head = 0;
 int buffer_tail = 0;
